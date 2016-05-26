@@ -11,12 +11,21 @@ package ch.hearc.ig.odi.webshop.business;
  */
 public class Article {
     
+    private int id;
     private String description;
     private float prix;
 
     public Article(String description, float prix) {
         this.description = description;
         this.prix = prix;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDescription() {
@@ -34,7 +43,5 @@ public class Article {
     public void setPrix(float prix) {
         this.prix = prix;
     }
-    
-    
     
 }
