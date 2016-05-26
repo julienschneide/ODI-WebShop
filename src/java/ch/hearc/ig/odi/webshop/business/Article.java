@@ -11,20 +11,21 @@ package ch.hearc.ig.odi.webshop.business;
  */
 public class Article {
     
-    private int id;
+    private Integer id;
     private String description;
     private float prix;
 
-    public Article(String description, float prix) {
+    public Article(Integer id, String description, float prix) {
+        this.id = id;
         this.description = description;
         this.prix = prix;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

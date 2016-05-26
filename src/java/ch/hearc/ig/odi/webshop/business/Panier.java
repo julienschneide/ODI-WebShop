@@ -14,18 +14,18 @@ import java.util.Map;
  * @author Julien Schneider <julien.schneider@he-arc.ch>
  */
 public class Panier {
-    private int id;
+    private Long id;
     private Map<Article, Integer> articles;
 
     public Panier(Map<Article, Integer> articles) {
         this.articles = articles;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
