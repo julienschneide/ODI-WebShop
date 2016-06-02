@@ -24,9 +24,14 @@ public class PanierBean implements Serializable{
     public void PanierBean(){
         
     }
+    
+    public Panier getPanier(){
+        return monPanier;
+    }
         
-    public void ajoutArticle(Article a, int q){
+    public String ajoutArticle(Article a, int q){
         monPanier.getArticles().put(a, q);
+        return "monPanier";
     }
     
 }
