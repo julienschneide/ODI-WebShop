@@ -45,6 +45,7 @@
                         <h:outputText value="Ajout" />    
                      </f:facet>
                     <h:form>
+                        <h:commandButton value="Ajouter l'article" action="#{panierBean.ajoutArticle(article, quantity.value)}" />
                     </h:form>
                 </h:column>
            </h:dataTable>

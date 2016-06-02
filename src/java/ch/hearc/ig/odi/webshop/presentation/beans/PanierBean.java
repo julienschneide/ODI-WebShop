@@ -19,7 +19,7 @@ import javax.inject.Named;
 @Named("panierBean")
 public class PanierBean implements Serializable{
     
-    private Panier monPanier;
+    private Panier monPanier = new Panier();
     
     public void PanierBean(){
         

@@ -16,6 +16,10 @@ import java.util.Map;
 public class Panier {
     private Long id;
     private Map<Article, Integer> articles;
+    
+    public Panier(){
+        this.articles = new HashMap<>();
+    }
 
     public Panier(Map<Article, Integer> articles) {
         this.articles = articles;
