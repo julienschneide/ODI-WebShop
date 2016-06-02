@@ -11,24 +11,32 @@
             <h1>List des articles</h1>
         
             <h:dataTable value="#{articleBean.articles}" var="article">
-               <h:column>
-                   <f:facet name="header">
-                       <h:outputText value="id" />
-                   </f:facet>
-                   #{article.id}
-               </h:column>
-               <h:column>
-                   <f:facet name="header">
-                       <h:outputText value="description" />
-                   </f:facet>
-                   #{article.description}
-               </h:column>
-               <h:column>
-                   <f:facet name="header">
-                       <h:outputText value="prix" />
-                   </f:facet>
-                   #{article.prix}
-               </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="id" />
+                    </f:facet>
+                    #{article.id}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="description" />
+                    </f:facet>
+                    #{article.description}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="prix" />
+                    </f:facet>
+                    #{article.prix}
+                </h:column>
+                <h:column>
+                     <f:facet name="header">
+                        <h:outputText value="Quantité" />    
+                     </f:facet>
+                         <h:inputText binding="#{quantity}">
+                             <f:validateLongRange minimum="0" />
+                         </h:inputText>
+                </h:column>
            </h:dataTable>
     </h:body>
 </html>
