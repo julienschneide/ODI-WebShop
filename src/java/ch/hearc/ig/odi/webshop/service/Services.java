@@ -38,5 +38,5 @@ public class Services implements Serializable{
     
     public List<Article> getArticlesList(){
         return new ArrayList(articles.values());
-    }       
+    }
 }

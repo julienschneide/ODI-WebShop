@@ -33,13 +33,18 @@
                      <f:facet name="header">
                         <h:outputText value="Quantité" />    
                      </f:facet>
+                    <h:form>
                          <h:inputText binding="#{quantity}">
                              <f:validateLongRange minimum="0" />
+                             <f:converter converterId="javax.faces.Integer" />
                          </h:inputText>
+                    </h:form>
                 </h:column>
                 <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Ajout" />    
+                     </f:facet>
                     <h:form>
-                        <h:commandButton value="Ajout" action="#{panierBean}" />
                     </h:form>
                 </h:column>
            </h:dataTable>
